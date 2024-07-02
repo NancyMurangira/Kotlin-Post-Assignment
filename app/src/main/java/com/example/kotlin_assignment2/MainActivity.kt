@@ -22,56 +22,14 @@ class MainActivity : AppCompatActivity() {
 }
 
 fun displayArticles() {
-    val article1 = Article("Nancy")
-    val article2 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article3 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article4 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article5 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article6 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article7 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
-    val article8 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
+    val article1 = Article("Nancy Shimwe", " Fashion","Published on: 29 April 2024", " Let us talk about health","View More","http")
+    val article2 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article3 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article4 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article5 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article6 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article7 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
+    val article8 = Article("Nancy Shimwe", "Health", "Published on: 29 April 2024", " Let us talk about health", "View More","http")
 
     val articlesList =
         listOf(article1, article2, article3, article4, article5, article6, article7, article8)

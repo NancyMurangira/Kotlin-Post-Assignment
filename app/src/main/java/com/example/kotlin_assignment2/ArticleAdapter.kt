@@ -8,12 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.appcompat.view.menu.MenuView.ItemView
 
 class ArticleAdapter(val articlesList: List<Article>): RecyclerView.Adapter<ArticlesViewHolder>(){
-    fun OnCreateViewHolder(parent: ViewGroup, viewType: Int): ArticlesViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.article_list_item, parent, false)
-        return ArticlesViewHolder((itemView))
-    }
 
-    override fun onBindingViewHolder(holder: ArticlesViewHolder, position: Int){
+    override fun onBindViewHolder(holder: ArticlesViewHolder, position: Int){
         val article = articlesList[position]
         holder.tvLink.text = article.link
         holder.tvDate.text = article.publishingDate
@@ -22,14 +18,17 @@ class ArticleAdapter(val articlesList: List<Article>): RecyclerView.Adapter<Arti
         holder.tvPreview.text = article.preview
     }
 
+//    fun onBindVieHolder(holder: ArticlesViewHolder, position: Int){
+//    val article = articlesList[position]
+//        holder.tvLink.text = article.link
+//        holder.tvDate.text = article.publishingDate
+//        holder.tvName.text = article.authorName
+//        holder.tvTitle.text = article.preview
+//    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticlesViewHolder {
-        val position = 0
-        val article = articlesList[position]
-        val holder = null
-        holder.tvLink.text = article.link
-        holder.tvDate.text = article.publishingDate
-        holder.tvName.text = article.authorName
-        holder.tvTitle.text = article.preview
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.article_list_item, parent, false)
+        return ArticlesViewHolder((itemView))
     }
 
 
