@@ -7,28 +7,22 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.kotlin_assignment2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var  binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var  binding: ActivityMainBinding
-    }
         super.onCreate(savedInstanceState)
-    binding = ActivityMainBinding.inflate(layoutinflater)
+    binding = ActivityMainBinding.inflate(layoutInflater)
     setContentView(binding.root)
+
     binding.rvArticles.layoutManager = LinearLayoutManager(this)
     displayArticles()
-
-
 }
 
 fun displayArticles() {
-    val article1 = Article(
-        "Nancy Shimwe",
-        "Health",
-        "Published on: 29 April 2024",
-        " Let us talk about health",
-        "View More"
-    )
+    val article1 = Article("Nancy")
     val article2 = Article(
         "Nancy Shimwe",
         "Health",
